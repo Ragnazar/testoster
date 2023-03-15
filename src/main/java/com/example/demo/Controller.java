@@ -7,8 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
     public Controller() {
     }
-    @GetMapping(path = "/get")
-    public String getTwoHundred(){
+
+    @GetMapping(path = "/get-200")
+    public String getTwoHundred() {
         return "500";
     }
+
+    @GetMapping(path = "/get-500")
+    public String getFiveHundred() {
+        return "200";
+    }
 }
+
